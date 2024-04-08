@@ -1,0 +1,15 @@
+@use '../../sass/abstracts' as i;
+
+.sendRequestButton {
+    border: none;
+    font-size: 2vw;
+    background-color: #6183ff;
+    color: white;
+    padding: 1.2vw;
+    border-radius: 1vw;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #87a1ff;
+    }
+}

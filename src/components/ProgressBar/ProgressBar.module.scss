@@ -1,0 +1,17 @@
+@use '../../sass/abstracts' as i;
+
+.progressBar {
+	width: 30vw;
+	height: 0.6vw;
+	border-radius: 5px;
+	background-color: i.$veryPaleBlue;
+    border-radius: 2vw;
+
+    &__inner {
+        background-color: i.$colorWetAsphalt; 
+        border-radius: 2vw;
+        height: 100%;
+        width: 100%;
+        transition: width 0.2s;
+    }
+}

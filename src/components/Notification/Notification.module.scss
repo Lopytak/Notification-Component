@@ -1,0 +1,53 @@
+@use '../../sass/abstracts' as i;
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.notification {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1vw;
+    display: flex;
+    flex-direction: row;
+    padding: 2vw;
+    border-radius: 0.8vw;
+    animation: fadeIn 2s;
+    -webkit-box-shadow: 0vw 0vw 0.1vw 0vw rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0vw 0vw 0.1vw 0vw rgba(0, 0, 0, 0.15);
+    box-shadow: 0vw 0vw 0.8vw 0vw rgba(0, 0, 0, 0.15);
+
+    &__icon {
+        height: 3.5vw;
+        width: 3.5vw;
+        margin-right: 1vw;     
+    }
+
+    .progressBar {
+        margin-top: 0.5vw;
+        height: 0.5vw;
+        width: 30vw;
+        border-radius: 1vw;
+    }
+
+}
+
+.notificationInfo {
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+        color: i.$colorBlackGreen;
+        font-size: 1.5vw;
+        font-weight: 550;
+    }
+
+    &__text {
+        color: i.$colorDustyGray;
+        font-size: 1.15vw;
+        font-weight: 300;
+        margin: 0.2vw 0 0.5vw;
+    }
+}
